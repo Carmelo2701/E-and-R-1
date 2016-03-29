@@ -6,23 +6,24 @@ void draw(){
   background(255);
   rectMode(CENTER);
   ellipseMode(CENTER);
+  float c1 = map(mouseX, 0, width, 0, 255);
   
   translate(100,100);
   //noCursor();
   
   //Zoog's Body
   stroke(0);
-  fill(175,300,40);
+  fill(175,c1,40);
   rect(0,0,20,100);
   
   //Zoog's Head
   stroke(0);
-  fill(255,50,100);
+  fill(255,c1,100);
   ellipse(0,-30,60,60);
   
   //eyes
   stroke(0);
-  fill(255,100,200);
+  fill(255,c1,200);
   ellipse(-19, -30,16,31);
   ellipse(19, -30,16,31);
   
